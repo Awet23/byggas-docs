@@ -28,18 +28,18 @@
 ### Training
 #### Prompt Engineering & RAG
 	1. How it works?
-		- RAG is part of the backend logic. It searches and retrives relevant resource from database. It is the process of searching the database, selecting the right sources, feeding them to the LLM and generating a grounded answer.
+		- RAG is part of the backend logic. It searches and retrives relevant resource               from database. It is the process of searching the database, selecting the                 right sources, feeding them to the LLM and generating a grounded answer.
 		- Builds propt with retreived context
 		- Send prompt to LLM
 		- Returns answer + resources
 	2. pros and cons?
 		- PROS
-			- RAG is good because it can use **your own data**, keep answers more **up to date**, and return **source references**. You can update the database without retraining the model. It also makes it easier to control what information the LLM is allowed to use.
+			- RAG is good because it can use **your own data**, keep answers more **up                  to date**, and return **source references**. You can update the database                  without retraining the model. It also makes it easier to control what                     information the LLM is allowed to use.
 		- CONS
-			- RAG depends heavily on the quality of retrieval. If the system retrieves the wrong sources, the LLM may give a weak or wrong answer. It also requires extra work: data ingestion, chunking, embeddings, metadata, search ranking, and source management. It is not just “connect data and it works perfectly.”
+			- RAG depends heavily on the quality of retrieval. If the system retrieves                  the wrong sources, the LLM may give a weak or wrong answer. It also                       requires extra work: data ingestion, chunking, embeddings, metadata,                      search ranking, and source management. It is not just “connect data and                   it works perfectly.”
 			
 	3. How it fits our project?
-		- Our data is based on **rules, regulations, guidance pages, and earlier construction decisions**. Application serving such data must be: 
+		- Our data is based on **rules, regulations, guidance pages, and earlier                    **construction decisions**. Application serving such data must be: 
 			- accurate
 			- traceable
 			- source-based

@@ -1,0 +1,1 @@
+- */end-session* : run this at the end of each session to update and document all claude.md files and document in docs with the changes made in the session.
